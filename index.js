@@ -56,7 +56,7 @@ app.post("/generate-image", async(req, res) => {
         console.log('Imaged saved locally');
 
         res.setHeader('Content-Type', 'application/json');
-        res.json({ filename, API_KEY });
+        res.json({ filename });
 
     } catch (error) {
         console.error(error.message);
